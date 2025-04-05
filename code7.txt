@@ -1,0 +1,15 @@
+
+public class Circle {
+    double radius;
+
+    public Circle(double r) {
+        radius = r;
+    }
+
+    
+
+    public static void main(String[] args) {
+        Circle circle = new Circle(5.0);
+           System.out.println("The perimeter of the circle  is: " + perimeter);
+    }
+}

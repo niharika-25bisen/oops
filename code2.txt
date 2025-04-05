@@ -1,0 +1,14 @@
+
+  public class Integer {
+       
+public int value;
+    
+
+    public int getValue() {
+        return value;
+    }
+
+    public void display() {
+        System.out.println("The value is: " + value);
+    }
+}

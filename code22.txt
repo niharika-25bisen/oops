@@ -1,0 +1,23 @@
+write a java code for single tash with multiple threads in java -
+
+class SingleTask implements Runnable {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(Thread.currentThread().getName() + ": Task " + i);
+        }
+    }
+}
+
+public class SingleTaskMultipleThreads {
+    public static void main(String[] args) {
+        SingleTask task = new SingleTask();
+
+        Thread thread1 = new Thread(task);
+        Thread thread2 = new Thread(task);
+        Thread thread3 = new Thread(task);
+
+        thread1.start();
+        thread2.start();
+        thread3.start();
+    }
+}

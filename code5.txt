@@ -1,0 +1,20 @@
+
+
+public class Example {
+    
+    String constructor;
+
+       
+    public void display() {
+        System.out.println("The constructor is: " + constructor);
+    }
+
+    
+    public static void main(String[] args) {
+        
+        Example example = new Example();
+
+       
+        example.display();
+    }
+}

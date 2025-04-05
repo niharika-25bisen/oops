@@ -1,0 +1,24 @@
+write a java code for find out area pf circle,traingle and squatre using method overloading -
+
+
+
+public class AreaCalculator {
+    public double calculateArea(double radius) {
+        return radius * radius;
+    }
+
+    public double calculateArea(double side, double side) {
+        return side * side;
+    }
+
+    public double calculateArea(double base, double height) {
+        return 0.5 * base * height;
+    }
+
+    public static void main(String[] args) {
+        AreaCalculator calculator = new AreaCalculator();
+        System.out.println("Area of Circle: " + calculator.calculateArea(5.0));
+        System.out.println("Area of Square: " + calculator.calculateArea(4.0, true));
+        System.out.println("Area of Triangle: " + calculator.calculateArea(3.0, 6.0));
+    }
+}

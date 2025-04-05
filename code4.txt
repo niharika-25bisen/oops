@@ -1,0 +1,28 @@
+
+public class Student {
+    
+    int id;
+    String name;
+
+    
+    public Student(int id, String name) {
+        id = id; 
+        name = name;
+    }
+
+   
+    public void displayDetails() {
+        System.out.println("Object ID: " + id);
+        System.out.println("Object Name: " + name);
+        System.out.println("Class Name: " + getClass().getSimpleName());
+    }
+
+    
+    public static void main (String[]args)
+        
+        Student student = new Student(102, "Bob");
+
+        
+        student.displayDetails();
+    }
+}
